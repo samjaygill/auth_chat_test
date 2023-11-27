@@ -32,7 +32,7 @@ const Message = ({message}) => {
           }
           alt=""
         />
-        <p>{formatTimestamp(message.date)}</p>
+        <p className="message-time">{formatTimestamp(message.date)}</p>
       </div>
       <div className="messageContent">
         <p>{message.text}</p>
