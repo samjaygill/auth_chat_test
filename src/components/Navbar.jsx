@@ -2,6 +2,7 @@ import { signOut } from 'firebase/auth'
 import React, { useContext } from 'react'
 import { auth } from '../firebase'
 import { AuthContext } from '../context/AuthContext'
+import logo from "../img/logo2.png"
 
 const Navbar = () => {
 
@@ -9,7 +10,7 @@ const Navbar = () => {
   
   return (
     <div className='navbar'>
-        <span className='logo'> SJG Chat</span>
+        <img src={logo} alt="logo" height={50}/>
         <div className="user">
             <img src={currentUser.photoURL} alt=''/>
             <span>{currentUser.displayName}</span>
